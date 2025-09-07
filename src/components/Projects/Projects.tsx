@@ -14,55 +14,52 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
-    description: 'Full-stack e-commerce solution with React and Node.js',
-    tech: ['React', 'TypeScript', 'Node.js', 'MongoDB'],
-    github: 'https://github.com',
-    demo: 'https://demo.com',
-    image: 'https://via.placeholder.com/400x250'
+    title: 'Weather Scraping',
+    description: 'Python application for scraping and analyzing weather data from various sources',
+    tech: ['Python', 'Web Scraping', 'Data Analysis', 'BeautifulSoup'],
+    github: 'https://github.com/Tanatpon-d/weather-scraping',
+    image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=250&fit=crop'
   },
   {
     id: 2,
-    title: 'Task Management App',
-    description: 'Collaborative task management tool with real-time updates',
-    tech: ['React', 'Redux', 'Firebase', 'Material-UI'],
-    github: 'https://github.com',
-    demo: 'https://demo.com',
-    image: 'https://via.placeholder.com/400x250'
+    title: 'GetCircle Image',
+    description: 'Python tool for image processing and circular image extraction',
+    tech: ['Python', 'OpenCV', 'Image Processing', 'Computer Vision'],
+    github: 'https://github.com/Tanatpon-d/Getcircle_Img',
+    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=250&fit=crop'
   },
   {
     id: 3,
-    title: 'Weather Dashboard',
-    description: 'Beautiful weather dashboard with forecasting',
-    tech: ['React', 'Chart.js', 'OpenWeather API', 'CSS Modules'],
-    github: 'https://github.com',
-    image: 'https://via.placeholder.com/400x250'
+    title: 'Basic Docker for Students',
+    description: 'Educational repository teaching Docker fundamentals with Python examples',
+    tech: ['Docker', 'Python', 'DevOps', 'Containerization'],
+    github: 'https://github.com/Tanatpon-d/basicdockerforstudent',
+    image: 'https://images.unsplash.com/photo-1605745341112-85968b19335b?w=400&h=250&fit=crop'
   },
   {
     id: 4,
-    title: 'Social Media Analytics',
-    description: 'Analytics dashboard for social media metrics',
-    tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Tailwind'],
-    github: 'https://github.com',
-    demo: 'https://demo.com',
-    image: 'https://via.placeholder.com/400x250'
+    title: 'Portfolio Website',
+    description: 'Personal portfolio website built with React and TypeScript',
+    tech: ['React', 'TypeScript', 'GitHub Pages', 'CSS Modules'],
+    github: 'https://github.com/Tanatpon-d/tanatpon-d.github.io',
+    demo: 'https://tanatpon-d.github.io',
+    image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=250&fit=crop'
   },
   {
     id: 5,
-    title: 'AI Chat Assistant',
-    description: 'Intelligent chat assistant powered by OpenAI',
-    tech: ['React', 'OpenAI API', 'WebSocket', 'Express'],
-    github: 'https://github.com',
-    image: 'https://via.placeholder.com/400x250'
+    title: 'GitHub Profile',
+    description: 'My GitHub profile repository with README and configurations',
+    tech: ['Markdown', 'GitHub Actions', 'Profile Customization'],
+    github: 'https://github.com/Tanatpon-d/Tanatpon-d',
+    image: 'https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=400&h=250&fit=crop'
   },
   {
     id: 6,
-    title: 'Portfolio Website',
-    description: 'Personal portfolio website with modern design',
-    tech: ['React', 'TypeScript', 'CSS Modules', 'Framer Motion'],
-    github: 'https://github.com',
-    demo: 'https://demo.com',
-    image: 'https://via.placeholder.com/400x250'
+    title: 'AI & Automation Projects',
+    description: 'Collection of AI and automation experiments and tools',
+    tech: ['Python', 'AI/ML', 'Automation', 'Data Science'],
+    github: 'https://github.com/Tanatpon-d',
+    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop'
   }
 ];
 
