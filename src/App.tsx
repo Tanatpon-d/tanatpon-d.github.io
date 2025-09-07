@@ -1,24 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import DevelopmentBanner from './components/DevelopmentBanner/DevelopmentBanner';
+import Hero from './components/Hero/Hero';
+import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
+import ThemeToggle from './components/ThemeToggle/ThemeToggle';
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      setIsDarkMode(true);
+      document.body.classList.add('dark-mode');
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('theme', !isDarkMode ? 'dark' : 'light');
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DevelopmentBanner />
+      <ThemeToggle isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+      <Hero />
+      <Projects />
+      <Contact />
     </div>
   );
 }
