@@ -35,31 +35,6 @@ const projects: Project[] = [
     tech: ['Docker', 'Python', 'DevOps', 'Containerization'],
     github: 'https://github.com/Tanatpon-d/basicdockerforstudent',
     image: 'https://images.unsplash.com/photo-1605745341112-85968b19335b?w=400&h=250&fit=crop'
-  },
-  {
-    id: 4,
-    title: 'Portfolio Website',
-    description: 'Personal portfolio website built with React and TypeScript',
-    tech: ['React', 'TypeScript', 'GitHub Pages', 'CSS Modules'],
-    github: 'https://github.com/Tanatpon-d/tanatpon-d.github.io',
-    demo: 'https://tanatpon-d.github.io',
-    image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=250&fit=crop'
-  },
-  {
-    id: 5,
-    title: 'GitHub Profile',
-    description: 'My GitHub profile repository with README and configurations',
-    tech: ['Markdown', 'GitHub Actions', 'Profile Customization'],
-    github: 'https://github.com/Tanatpon-d/Tanatpon-d',
-    image: 'https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=400&h=250&fit=crop'
-  },
-  {
-    id: 6,
-    title: 'AI & Automation Projects',
-    description: 'Collection of AI and automation experiments and tools',
-    tech: ['Python', 'AI/ML', 'Automation', 'Data Science'],
-    github: 'https://github.com/Tanatpon-d',
-    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop'
   }
 ];
 
