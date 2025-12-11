@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #FFFFFF;
+  color: #222222;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background: #2D1810;
+  color: #F5E6D3;
+}
+
+body.dark-mode .App {
+  background: #2D1810;
+}
+
+body.dark-mode section {
+  background: #2D1810 !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: #F5E6D3;
+}
+
+body.dark-mode p {
+  color: #C4B5A0;
+}
+
+body.dark-mode [class*="hero"] {
+  background: linear-gradient(135deg, #2D1810 0%, #3D2817 100%) !important;
+}
+
+body.dark-mode [class*="hero"]::before {
+  background: linear-gradient(135deg, rgba(77, 50, 31, 0.6) 0%, rgba(92, 60, 38, 0.4) 50%, transparent 100%) !important;
+}
+
+body.dark-mode [class*="hero"]::after {
+  background: linear-gradient(45deg, rgba(61, 40, 25, 0.5) 0%, rgba(77, 50, 31, 0.3) 50%, transparent 100%) !important;
+}
+
+body.dark-mode [class*="projects"] {
+  background: linear-gradient(180deg, #2D1810 0%, #3D2817 100%) !important;
+}
+
+body.dark-mode [class*="projects"]::before,
+body.dark-mode [class*="projects"]::after {
+  opacity: 0.2 !important;
+}
+
+body.dark-mode [class*="contact"] {
+  background: linear-gradient(180deg, #3D2817 0%, #4D321F 50%, #2D1810 100%) !important;
+}
+
+body.dark-mode [class*="contact"]::before,
+body.dark-mode [class*="contact"]::after {
+  opacity: 0.15 !important;
+}
+
+body.dark-mode [class*="card"] {
+  background: linear-gradient(145deg, #3D2817 0%, #4D321F 100%) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+  border-color: rgba(92, 60, 38, 0.3) !important;
+}
+
+body.dark-mode [class*="techTag"] {
+  background: linear-gradient(135deg, #4D321F 0%, #5C3C26 100%) !important;
+  color: #F5E6D3 !important;
+  border-color: rgba(92, 60, 38, 0.4) !important;
+}
+
+body.dark-mode [class*="themeToggle"] {
+  background: linear-gradient(145deg, #3D2817 0%, #4D321F 100%) !important;
+  border-color: rgba(92, 60, 38, 0.3) !important;
+}
+
+body.dark-mode [class*="themeToggle"] svg {
+  color: #F5E6D3 !important;
+}
+
+body.dark-mode [class*="socialLink"] {
+  background: linear-gradient(145deg, #3D2817 0%, #4D321F 100%) !important;
+  color: #F5E6D3 !important;
+  border-color: rgba(92, 60, 38, 0.3) !important;
+}
+
+body.dark-mode [class*="footer"] {
+  border-top-color: rgba(92, 60, 38, 0.3) !important;
+  color: #A0826D !important;
+}
+
+.App {
+  min-height: 100vh;
+  transition: background 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}

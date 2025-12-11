@@ -1,0 +1,137 @@
+.skills {
+  padding: 5rem 2rem;
+  background: linear-gradient(180deg, #FAF0E6 0%, #FFF8F3 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.skills::before {
+  content: '';
+  position: absolute;
+  top: 15%;
+  right: -10%;
+  width: 30%;
+  height: 30%;
+  background: radial-gradient(circle, #FFE5CC 0%, transparent 70%);
+  opacity: 0.4;
+  border-radius: 50%;
+}
+
+.skills::after {
+  content: '';
+  position: absolute;
+  bottom: 15%;
+  left: -5%;
+  width: 25%;
+  height: 25%;
+  background: radial-gradient(circle, #F4E4D4 0%, transparent 70%);
+  opacity: 0.3;
+  border-radius: 50%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6B4423;
+  text-align: center;
+  margin: 0 0 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #8B6F47;
+  text-align: center;
+  margin: 0 0 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: linear-gradient(145deg, #FFFFFF 0%, #FFF8F3 100%);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(139, 90, 43, 0.1);
+  transition: all 0.3s ease;
+  animation: fadeIn 0.6s ease-out backwards;
+  border: 1px solid rgba(160, 130, 109, 0.1);
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(139, 90, 43, 0.15);
+  border-color: rgba(160, 130, 109, 0.2);
+}
+
+.categoryTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #6B4423;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.skillTag {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #FAF0E6 0%, #FFE5CC 100%);
+  color: #6B4423;
+  font-size: 0.9rem;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(160, 130, 109, 0.2);
+}
+
+.skillTag:hover {
+  background: linear-gradient(135deg, #A0826D 0%, #8B6F47 100%);
+  color: #FFFFFF;
+  border-color: transparent;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .categoryTitle {
+    font-size: 1.25rem;
+  }
+}
