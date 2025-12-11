@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(npm start)",
+      "Bash(timeout 15 bash -c 'while ! netstat -a | grep -q \"\":3000\"\"; do echo \"\"Waiting for server...\"\"; sleep 2; done; echo \"\"Server started!\"\"')",
+      "Bash(npm run build:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
