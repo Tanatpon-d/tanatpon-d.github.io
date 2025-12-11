@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import DevelopmentBanner from './components/DevelopmentBanner/DevelopmentBanner';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import Experience from './components/Experience/Experience';
@@ -28,7 +27,6 @@ function App() {
 
   return (
     <div className="App">
-      <DevelopmentBanner />
       <ThemeToggle isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
       <Hero />
       <About />
