@@ -14,6 +14,8 @@ const About: React.FC = () => {
               I am an <strong>AI Automation Engineer</strong> with a passion for building intelligent systems
               that transform how businesses operate. My expertise lies in creating automated solutions
               that leverage artificial intelligence and machine learning to drive efficiency and innovation.
+              I use <strong>vibecoding</strong> methodology to accelerate development cycles and continuously
+              expand my technical skillset as an eager learner.
             </p>
           </div>
 
@@ -102,6 +104,10 @@ const About: React.FC = () => {
               <div className={styles.specialtyItem}>
                 <span className={styles.specialtyIcon}>⚡</span>
                 <span>Data Analytics & Visualization</span>
+              </div>
+              <div className={styles.specialtyItem}>
+                <span className={styles.specialtyIcon}>🚀</span>
+                <span>Vibecoding - Momentum-Driven Development & Growth</span>
               </div>
             </div>
           </div>

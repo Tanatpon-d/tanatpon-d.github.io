@@ -73,6 +73,27 @@
   box-shadow: 0 8px 30px rgba(160, 130, 109, 0.4);
 }
 
+.phoneButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #A0826D 0%, #8B6F47 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(160, 130, 109, 0.3);
+  margin-left: 1rem;
+}
+
+.phoneButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(160, 130, 109, 0.4);
+}
+
 .icon {
   width: 24px;
   height: 24px;
@@ -124,12 +145,18 @@
   .title {
     font-size: 2rem;
   }
-  
+
   .emailButton {
     font-size: 1rem;
     padding: 0.875rem 1.5rem;
   }
-  
+
+  .phoneButton {
+    font-size: 1rem;
+    padding: 0.875rem 1.5rem;
+    margin-left: 0.5rem;
+  }
+
   .social {
     gap: 1rem;
   }

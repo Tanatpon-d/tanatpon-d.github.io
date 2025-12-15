@@ -30,9 +30,9 @@ function App() {
       <ThemeToggle isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
       <Hero />
       <About />
-      <Experience />
-      <Projects />
       <Skills />
+      <Projects />
+      <Experience />
       <Contact />
     </div>
   );
