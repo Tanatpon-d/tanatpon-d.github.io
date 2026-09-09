@@ -3,113 +3,97 @@ import styles from './About.module.css';
 
 const About: React.FC = () => {
   return (
-    <section className={styles.about}>
+    <section id="about" className={styles.about}>
       <div className={styles.container}>
-        <h2 className={styles.title}>About Me</h2>
-        <p className={styles.subtitle}>AI Automation Engineer</p>
+        <div className={styles.header}>
+          <div className={styles.label}>Engineering Focus</div>
+          <h2 className={styles.title}>About & Data Architecture</h2>
+          <p className={styles.subtitle}>
+            Architecting reliable cloud pipelines, distributed data processing, and analytical warehouses that transform raw data into decisions.
+          </p>
+        </div>
 
-        <div className={styles.content}>
-          <div className={styles.introCard}>
-            <p className={styles.intro}>
-              I am an <strong>AI Automation Engineer</strong> with a passion for building intelligent systems
-              that transform how businesses operate. My expertise lies in creating automated solutions
-              that leverage artificial intelligence and machine learning to drive efficiency and innovation.
-              I use <strong>vibecoding</strong> methodology to accelerate development cycles and continuously
-              expand my technical skillset as an eager learner.
+        <div className={styles.bentoGrid}>
+          {/* Main Intro Card */}
+          <div className={`${styles.card} ${styles.introCard}`}>
+            <h3 className={styles.introTitle}>Data Engineering Philosophy</h3>
+            <p className={styles.introText}>
+              I am a <strong>Data Engineer</strong> with strong roots in Fullstack Engineering and Business Intelligence.
+              I specialize in building fault-tolerant, scalable data pipelines using <strong>Apache Airflow</strong>, distributed processing with <strong>Apache Spark & PySpark</strong>,
+              and cloud-native architectures on <strong>Google Cloud Platform (GCP)</strong>.
+              I emphasize data reliability, schema integrity, and high-performance SQL query optimization to ensure business stakeholders can depend on seamless <strong>Power BI</strong> and <strong>Tableau</strong> analytics.
             </p>
           </div>
 
-          <div className={styles.expertiseGrid}>
-            <div className={styles.expertiseCard}>
-              <div className={styles.iconWrapper}>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                </svg>
-              </div>
-              <h3 className={styles.expertiseTitle}>Intelligent Automation</h3>
-              <p className={styles.expertiseDescription}>
-                Designing and implementing automated workflows that combine AI/ML capabilities
-                with business processes to optimize operations and reduce manual effort.
-              </p>
+          {/* 4 Pillars */}
+          <div className={`${styles.card} ${styles.pillarCard}`}>
+            <div className={styles.iconBox}>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+              </svg>
             </div>
-
-            <div className={styles.expertiseCard}>
-              <div className={styles.iconWrapper}>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                  <line x1="8" y1="21" x2="16" y2="21"></line>
-                  <line x1="12" y1="17" x2="12" y2="21"></line>
-                </svg>
-              </div>
-              <h3 className={styles.expertiseTitle}>System Optimization</h3>
-              <p className={styles.expertiseDescription}>
-                Analyzing and optimizing complex systems through data engineering,
-                SQL optimization, and ETL pipeline design to ensure peak performance.
-              </p>
-            </div>
-
-            <div className={styles.expertiseCard}>
-              <div className={styles.iconWrapper}>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                </svg>
-              </div>
-              <h3 className={styles.expertiseTitle}>Data Engineering</h3>
-              <p className={styles.expertiseDescription}>
-                Building robust data pipelines and analytics solutions for healthcare and
-                education sectors, turning raw data into actionable business insights.
-              </p>
-            </div>
-
-            <div className={styles.expertiseCard}>
-              <div className={styles.iconWrapper}>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="3"></circle>
-                  <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"></path>
-                </svg>
-              </div>
-              <h3 className={styles.expertiseTitle}>AI/ML Solutions</h3>
-              <p className={styles.expertiseDescription}>
-                Developing machine learning models for predictive analytics, natural language
-                processing, and computer vision applications using modern frameworks.
-              </p>
-            </div>
+            <h4 className={styles.pillarTitle}>Distributed Processing (Spark & PySpark)</h4>
+            <p className={styles.pillarDesc}>
+              Designing distributed transformation workflows, partitioned transformations, and efficient in-memory data processing for high-volume enterprise datasets.
+            </p>
           </div>
 
-          <div className={styles.specialtiesCard}>
-            <h3 className={styles.specialtiesTitle}>Core Specialties</h3>
-            <div className={styles.specialtiesList}>
-              <div className={styles.specialtyItem}>
-                <span className={styles.specialtyIcon}>⚡</span>
-                <span>AI/ML Model Development & Deployment</span>
-              </div>
-              <div className={styles.specialtyItem}>
-                <span className={styles.specialtyIcon}>⚡</span>
-                <span>ETL Pipeline Design & Automation</span>
-              </div>
-              <div className={styles.specialtyItem}>
-                <span className={styles.specialtyIcon}>⚡</span>
-                <span>RESTful API Development</span>
-              </div>
-              <div className={styles.specialtyItem}>
-                <span className={styles.specialtyIcon}>⚡</span>
-                <span>Business Intelligence & Dashboard Design</span>
-              </div>
-              <div className={styles.specialtyItem}>
-                <span className={styles.specialtyIcon}>⚡</span>
-                <span>Robotic Process Automation (RPA)</span>
-              </div>
-              <div className={styles.specialtyItem}>
-                <span className={styles.specialtyIcon}>⚡</span>
-                <span>Data Analytics & Visualization</span>
-              </div>
-              <div className={styles.specialtyItem}>
-                <span className={styles.specialtyIcon}>🚀</span>
-                <span>Vibecoding - Momentum-Driven Development & Growth</span>
-              </div>
+          <div className={`${styles.card} ${styles.pillarCard}`}>
+            <div className={styles.iconBox}>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
             </div>
+            <h4 className={styles.pillarTitle}>Orchestration & ETL (Apache Airflow)</h4>
+            <p className={styles.pillarDesc}>
+              Building scheduled, idempotent DAGs with automated error alerts, retry mechanisms, and data quality validations for dependable batch workloads.
+            </p>
+          </div>
+
+          <div className={`${styles.card} ${styles.pillarCard}`}>
+            <div className={styles.iconBox}>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+              </svg>
+            </div>
+            <h4 className={styles.pillarTitle}>Cloud Ecosystem (Google Cloud Platform)</h4>
+            <p className={styles.pillarDesc}>
+              Leveraging GCP services (BigQuery, Cloud Storage, Cloud Functions) to create cost-effective, scalable data lakes and analytical warehouses.
+            </p>
+          </div>
+
+          <div className={`${styles.card} ${styles.pillarCard}`}>
+            <div className={styles.iconBox}>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10" />
+                <line x1="12" y1="20" x2="12" y2="4" />
+                <line x1="6" y1="20" x2="6" y2="14" />
+              </svg>
+            </div>
+            <h4 className={styles.pillarTitle}>Data Modeling & BI (Power BI & Tableau)</h4>
+            <p className={styles.pillarDesc}>
+              Designing star/snowflake schemas, tuning SQL query execution plans, and structuring optimized data marts ready for executive Power BI & Tableau dashboards.
+            </p>
+          </div>
+
+          {/* 3 Stat / Impact Cards */}
+          <div className={`${styles.card} ${styles.statCard}`}>
+            <div className={styles.statValue}>GCP & Spark</div>
+            <div className={styles.statLabel}>Modern Data Stack</div>
+            <div className={styles.statDesc}>Distributed processing with PySpark, scheduled with Airflow, and hosted on Google Cloud</div>
+          </div>
+
+          <div className={`${styles.card} ${styles.statCard}`}>
+            <div className={styles.statValue}>Power BI</div>
+            <div className={styles.statLabel}>Enterprise Visualization</div>
+            <div className={styles.statDesc}>Seamless data mart modeling and interactive KPI reporting for organizational decision makers</div>
+          </div>
+
+          <div className={`${styles.card} ${styles.statCard}`}>
+            <div className={styles.statValue}>Healthcare</div>
+            <div className={styles.statLabel}>Domain Expertise</div>
+            <div className={styles.statDesc}>Handling mission-critical clinical datasets, hospital KPIs, and high-security data pipelines</div>
           </div>
         </div>
       </div>

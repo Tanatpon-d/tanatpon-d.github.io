@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
-import Experience from './components/Experience/Experience';
-import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
+import Experience from './components/Experience/Experience';
 import Contact from './components/Contact/Contact';
-import ThemeToggle from './components/ThemeToggle/ThemeToggle';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -16,24 +15,40 @@ function App() {
     if (savedTheme === 'dark') {
       setIsDarkMode(true);
       document.body.classList.add('dark-mode');
+    } else if (
+      !savedTheme &&
+      typeof window !== 'undefined' &&
+      typeof window.matchMedia === 'function' &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches
+    ) {
+      // Default to dark mode if system prefers dark
+      setIsDarkMode(true);
+      document.body.classList.add('dark-mode');
     }
   }, []);
 
   const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-    document.body.classList.toggle('dark-mode');
-    localStorage.setItem('theme', !isDarkMode ? 'dark' : 'light');
+    const newMode = !isDarkMode;
+    setIsDarkMode(newMode);
+    if (newMode) {
+      document.body.classList.add('dark-mode');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.body.classList.remove('dark-mode');
+      localStorage.setItem('theme', 'light');
+    }
   };
 
   return (
     <div className="App">
-      <ThemeToggle isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Experience />
-      <Contact />
+      <Navbar isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Contact />
+      </main>
     </div>
   );
 }
