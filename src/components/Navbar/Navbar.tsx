@@ -27,9 +27,8 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
         </nav>
 
         <div className={styles.actions}>
-          {/* Hidden for now: Resume download button
           <a
-            href="/Tanatpon_Resume_Updated.pdf"
+            href={process.env.PUBLIC_URL ? `${process.env.PUBLIC_URL}/Tanatpon_Resume_Updated.pdf` : "/Tanatpon_Resume_Updated.pdf"}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.resumeBtn}
@@ -42,7 +41,6 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
             </svg>
             <span>Resume</span>
           </a>
-          */}
 
           <button
             className={styles.themeBtn}

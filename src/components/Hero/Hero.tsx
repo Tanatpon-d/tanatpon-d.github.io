@@ -39,9 +39,8 @@ const Hero: React.FC = () => {
             <span>Get in Touch</span>
           </a>
 
-          {/* Hidden for now: Download CV button
           <a
-            href="/Tanatpon_Resume_Updated.pdf"
+            href={process.env.PUBLIC_URL ? `${process.env.PUBLIC_URL}/Tanatpon_Resume_Updated.pdf` : "/Tanatpon_Resume_Updated.pdf"}
             target="_blank"
             rel="noopener noreferrer"
             download="Tanatpon_Resume.pdf"
@@ -54,7 +53,6 @@ const Hero: React.FC = () => {
             </svg>
             <span>Download CV</span>
           </a>
-          */}
         </div>
 
         <div className={styles.socials}>
